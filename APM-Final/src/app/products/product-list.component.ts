@@ -33,6 +33,8 @@ export class ProductListComponent implements OnInit, OnDestroy {
     filterBy = filterBy.toLocaleLowerCase();
     return this.products.filter((product: IProduct) =>
       product.productName.toLocaleLowerCase().includes(filterBy));
+
+      
   }
 
   toggleImage(): void {
